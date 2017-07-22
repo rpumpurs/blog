@@ -2,11 +2,13 @@
 layout: post
 title: "Immutable DTOs"
 date: "2017-07-02 19:54:36 +0300"
-categories: programming, PHP
+tags: programming design maintainability
 external_url: idiorm.readthedocs.io
 ---
 
-I came up with this *compromise* at my current work place where we use [ORM]({{ page.external_url }}) for interactions with database. We have a quite a large number of repository type of classes. In a lot of cases they returned a plain PHP key value array. Similar to this:
+I came up with this *compromise* at my current work place where we use [ORM]({{ page.external_url }}) for interactions with database. We have a quite a large number of repository type of classes. In a lot of cases they returned a plain PHP key value array.
+
+Similar to this:
 ```
 Array
 (

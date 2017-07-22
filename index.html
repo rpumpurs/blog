@@ -2,9 +2,21 @@
 layout: default
 title: Rūdolfs Pumpurs
 ---
-<div class="blurb">
+<div class="posts">
     {% for post in site.posts %}
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>
+        <section>
+            <header>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <small>
+                    <time>
+                        {{ post.date | date: "%B %e, %Y" }}
+                    </time>
+                </small>
+            </header>
+            <div class="short_description">
+                {{ post.excerpt }}
+            </div>
+            <a href="{{ post.url }}">read more ...</a>
+        </section>
     {% endfor %}
 </div>
