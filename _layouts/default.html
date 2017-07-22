@@ -5,15 +5,11 @@
 
 <body>
 
-    {% include main_menu.html %}
-
     <div class="container">
-
+        {% include main_menu.html %}
         {{ content }}
-
+        {% include footer.html %}
     </div>
-
-    {% include footer.html %}
 
 </body>
 
