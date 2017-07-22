@@ -8,9 +8,16 @@ title: Blog About Programming
             <header>
                 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <small>
-                    <time>
-                        {{ post.date | date: "%B %e, %Y" }}
-                    </time>
+                    <ul>
+                        <li>
+                            <time>
+                                {{ post.date | date: "%B %e, %Y" }}
+                            </time>
+                        </li>
+                        <li>
+                            <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}">a</a>
+                        </li>
+                    </ul>
                 </small>
             </header>
             <div class="short_description">
@@ -19,4 +26,5 @@ title: Blog About Programming
             <a href="{{ post.url }}">read more ...</a>
         </section>
     {% endfor %}
+    <script id="dsq-count-scr" src="https://pumpurs.disqus.com/count.js" async></script>
 </div>

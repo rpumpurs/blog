@@ -10,7 +10,7 @@ h1 a, h2 a {
     text-decoration: none;
 }
 
-header small {
+header small, small a {
     color: grey;
 }
 
@@ -20,6 +20,17 @@ h1, h2, h3 {
 
 nav {
     margin-bottom: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 9.5px;
+    white-space: nowrap;
 }
 
 .container {
