@@ -1,7 +1,13 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: default
+title: About Me
+permalink: /about-me/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About Me
+
+I'm Rudolfs Pumpurs, a programmer.
+
+I would like to think that my skills aren't limited to that. However it is the only skill that I have been able to sell to anybody so far.
+
+This blog contains ideas about software and the industry. The way code is written these days is painfully sub-optimal. So ideas need to be made.
