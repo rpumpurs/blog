@@ -58,3 +58,12 @@ footer {
     text-align: center;
     color: #919191;
 }
+
+pre {
+    padding: .5rem;
+    line-height: 1.25;
+    border-left: 8px solid #fafafa;
+    padding: 1rem;
+    font-size: 16px;
+    margin-left: 20px;
+}

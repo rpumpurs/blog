@@ -14,10 +14,13 @@ When I first came across this I really liked the idea. However, I didn't underst
 ```PHP
 class UserRepository
 {
-  public function getAllByCompany($companyId, $type, $isActive)
-  {
-    // SQL query
-  }
+    public function getAllByCompany(
+        $companyId,
+        $type,
+        $isActive
+    ) {
+        // SQL query
+    }
 }
 ```
 
@@ -32,17 +35,15 @@ Constructors.
 ```
 class UserRepository
 {
-  private $companyId;
-
-  public function __construct($companyId)
-  {
-    $this->companyId = $companyId;
-  }
-
-  public function getAllActiveAdmins()
-  {
-    // SQL query
-  }
+    private $companyId;
+    public function __construct($companyId)
+    {
+        $this->companyId = $companyId;
+    }
+    public function getAllActiveAdmins()
+    {
+        // SQL query
+    }
 }
 ```
 
