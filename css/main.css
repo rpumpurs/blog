@@ -86,3 +86,13 @@ pre {
 .highlighter-rouge {
     margin-bottom: 1.5em;
 }
+
+pre code {
+    background-color: inherit;
+    padding: 0;
+}
+
+code {
+    background-color: #d0d0d0;
+    padding: 0 6px;
+}

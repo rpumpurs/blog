@@ -3,15 +3,16 @@ layout: post
 title: "Reducing Function Argument Count"
 date: "2017-07-01 18:13:30 +0300"
 tags: programming quality oop
-external_url: http://amzn.to/2un9mMD
+affiliate_url: http://amzn.to/2un9mMD
 ---
-If you read books like [Clean Code]({{ page.external_url }}) you would have come across recommendations for function parameter count. Basically it says that the more arguments the more questioning you should be about your code design.
 
-A function should preferably have no arguments (niladic). Then the recommendations go on and list a **few** cases where **one** function argument (monadic) is ok to use. Even fewer justifications for two arguments (diadic) and so on.
+If you read books like [Clean Code]({{ page.affiliate_url }}) you would have come across recommendations for function parameter count. Basically, it says that the more arguments the more questioning you should be about your code design.
 
-When I first came across this I really liked the idea. However, I didn't understand how to practically apply it to my daily coding routine. As if I knew the cause that my code was suffering from, but din't know how to improve it. Because when I looked at my code it had patterns like this:
+A function should preferably have no arguments (niladic). Then the recommendations go on and list a **few** cases where **one** function argument (monadic) is **OK** to use. Even fewer justifications for two arguments (diadic) and so on.
 
-```PHP
+When I first came across this, I really liked the idea. However, I didn't understand how to practically apply it to my daily coding routine. As if I realized the cause that my code was suffering from, but din't know how to improve it. Because when I looked at my code it had patterns like this:
+
+```
 class UserRepository
 {
     public function getAllByCompany(
@@ -24,9 +25,9 @@ class UserRepository
 }
 ```
 
-We can improve the function by extracting the `$type` and `$isActive` arguments into different functions. But what if I wanted to even get rid of `$companyId`?
+We can improve the function by extracting the `$type` and `$isActive` arguments into different functions. But what if I wanted to get rid of `$companyId` too?
 
-This is a very basic example and you could argue that having the company identifier is justifiable. However, for the sake of this discussion, lets say that we want to make the function niladic.
+This is a very basic example and you could argue that having the company identifier there is justifiable. However, for the sake of this discussion, lets say that we want to make the function niladic.
 
 ## The Answer
 
@@ -47,6 +48,6 @@ class UserRepository
 }
 ```
 
-I can design the code so that the user repository takes company identifier as a constructor argument. Languages like Java allow constructor overloading which make the solution even cleaner.
+User repository takes the company identifier as a constructor argument. Languages like Java allow constructor overloading, which would make the solution even cleaner.
 
-For me it is clear how the recommendation to reduce function arguments has made me think about my design and potential improvements. Even my programmer's thinking has changed in the way of more object oriented style because now my class is instantiated with a state. Not just dumb retrieval. My user repository usage in code is cleaner and more readable. I can instantiate the class once and retrieve the users afterwards without dragging the company identifier along.
+The recommendation to reduce function arguments has made me reconsider my design and potential improvements. Programmer's thinking changes to a more object oriented style, because the class is initialized with a state. User repository usage in code is cleaner and more readable. Initialize the class once and retrieve the users afterwards, without dragging the company identifier along.
