@@ -8,7 +8,7 @@ external_url: http://idiorm.readthedocs.io
 
 Data from the DB is often retrieved as plain key value arrays. Even projects that use ORMs like [this]({{ page.external_url }}) or other active record implementations do not improve the situation.
 
-We either pass around full blown active record objects or arrays like this:
+We either pass around full-blown active record objects or arrays like this:
 ```
 Array
 (
@@ -19,7 +19,7 @@ Array
 )
 ```
 
-Often its usage would be multiple nestings down, where its origin is hard to trace. Often it would even be modified somewhere in between.
+Often its usage would be multiple nestings down, where its origin is hard to trace. Often it would even be modified somewhere inbetween.
 
 There are multiple problems resulting from this, to name a few:
 * Accessing array element by key
