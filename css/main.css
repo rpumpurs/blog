@@ -82,3 +82,7 @@ pre {
     margin-right: 9.5px;
     margin-bottom: 3px;
 }
+
+.highlighter-rouge {
+    margin-bottom: 1.5em;
+}

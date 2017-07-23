@@ -3,36 +3,36 @@ layout: post
 title: "Immutable DTOs"
 date: "2017-07-02 19:54:36 +0300"
 tags: programming design maintainability
-external_url: idiorm.readthedocs.io
+external_url: http://idiorm.readthedocs.io
 ---
 
-I came up with this *compromise* at my current work place where we use [ORM]({{ page.external_url }}) for interactions with database. We have a quite a large number of repository type of classes. In a lot of cases they returned a plain PHP key value array.
+Data from the DB is often retrieved as plain key value arrays. Even projects that use ORMs like [this]({{ page.external_url }}) or other active record implementations do not improve the situation.
 
-Similar to this:
+We either pass around full blown active record objects or arrays like this:
 ```
 Array
 (
     [id] => 1
-    [name] => Entity name
-    [type] => Entity type
+    [name] => User name
+    [type] => User type
     [created_at] => 2017-01-01 00:00:00
 )
 ```
 
-Then this PHP array was passed around to wherever it was used afterwards. Often its usage would be multiple nestings down where its origin is hard to trace. Often it would even be modified somewhere in between.
+Often its usage would be multiple nestings down, where its origin is hard to trace. Often it would even be modified somewhere in between.
 
-There are multiple problems resulting out of this, to name a few:
+There are multiple problems resulting from this, to name a few:
 * Accessing array element by key
-* Needing to look up the retrieval function to know what data the array contains
+* Looking up the original retrieval function to know what data the array contains
 * Time consuming backtrace analyzing
 
-When trying to find a better solution I was contemplating different ideas:
-* POPOs
+We need a data structure for conveniently using the data afterwards. When trying to find a better solution, I was contemplating different ideas:
+* POPOs - classes with public fields only and no methods
 * DTOs with setters and getters
 
 ### The compromise
 
-Immutable DTOs.
+Immutable DTOs (no setters).
 
 ```
 class UserDTO
@@ -53,8 +53,15 @@ class UserDTO
         return $this->type;
     }
 }
+
+$user = new UserDTO($dbUser['name'], $dbUser['type']);
 ```
 
-Within this current system it is the best solution. They allow me to create the object once without worrying that it could be changed in the process. Most GUIs are able to use autocomplete functionality on those objects considering they are properly type-hinted.
+Then if you need to modify the data, initialize a new object:
+```
+$changedUser = new UserDTO($user->name(), 'new type');
+```
 
-*Disclaimer: I am not an advocate of DTOs as they hurt the OOP design. However in many real world/legacy systems this is a good solution.*
+Most GUIs are able to use the autocomplete functionality on those objects, considering they are properly type-hinted. Also, this allows me to create the DTO once and stop worrying that it could be changed in the process - increased readability and maintainability. Possibility to look up object initialization occurrences - increased traceability.
+
+*I am not an advocate of DTOs as they hurt the OOP design. However, in some real world/legacy systems this is the only solution.*
