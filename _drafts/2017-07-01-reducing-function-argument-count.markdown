@@ -3,7 +3,7 @@ layout: post
 title: "Reducing Function Argument Count"
 date: "2017-07-01 18:13:30 +0300"
 tags: programming quality oop
-external_url: https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
+external_url: http://amzn.to/2un9mMD
 ---
 If you read books like [Clean Code]({{ page.external_url }}) you would have come across recommendations for function parameter count. Basically it says that the more arguments the more questioning you should be about your code design.
 
