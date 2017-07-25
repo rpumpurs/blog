@@ -86,6 +86,12 @@ pre {
     margin-bottom: 25px;
 }
 
+@media (max-width: 700px) {
+    .markdown_content ul {
+        padding-left: 20px;
+    }
+}
+
 .markdown_content ul li {
     display: list-item;
     margin-right: 9.5px;
