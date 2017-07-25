@@ -9,18 +9,16 @@
         <header>
             {% include main_menu.html %}
             <h1>{{ page.title }}</h1>
-            <small>
-                <ul>
-                    <li>
-                        <time>
-                            {{ page.date | date: "%B %e, %Y" }}
-                        </time>
-                    </li>
-                    <li>
-                        <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}"></a>
-                    </li>
-                </ul>
-            </small>
+            <ul>
+                <li>
+                    <time>
+                        <small>{{ page.date | date: "%B %e, %Y" }}</small>
+                    </time>
+                </li>
+                <li>
+                    <small><a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}"></a></small>
+                </li>
+            </ul>
         </header>
         <div class="markdown_content">
             {{ page.content }}
