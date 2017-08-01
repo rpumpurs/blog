@@ -1,27 +1,29 @@
 ---
 layout: post
 title: "Only One Life to Think"
-tags: programming management
+tags: programming readability quality management
 date: "2017-07-31 21:36:39 +0300"
+affiliate_url: http://amzn.to/2tWHZ9M
 ---
 
 If you look at a piece of code and have to use your brain to understand what is going on, there is something very terribly wrong with it.
+
+The same applies to documentation. Documentation isn't a bulletin point list of the functionality in a nutshell.
 
 ## It should read like a book
 
 A page turner.
 
-Some 10 years ago we used forums to solve programming problems. Where have they dissapeared? [Stack Overflow](https://stackoverflow.com/) has solved it by giving a solution where we don't need to think. Literally, it takes 2 seconds to scan the answer to determine whether it applies to what you are searching for.
+Somebody said that the only measurement for code quality is *WTFs/minute*. When you read code, how many times do you stop and think, why is it written this way? Every time this happens, the brain cycle is interrupted and is routed into a subroutine. When it is processed, you need to store the result in the temporary memory, and continue reading. We have all been there, we have all experienced the memory overflow.
 
-The expectation isn't that the code would be easily understood by a 5 year old. Neither by any other non programmer. Just the same as the proof of [Fermat's Last Theorem](http://mathworld.wolfram.com/FermatsLastTheorem.html) isn't an afternoon read for a non mathematician.
+An interesting idea is described in [Outliers]({{ page.affiliate_url }}). An excerpt can be read [here](http://gladwell.com/outliers/rice-paddies-and-math-tests/). It says that Chinese have a major advantage when it comes to maths. Due to their short pronunciation of the numbers, they can simply memorize more numbers. When doing even the simplest equations, we use the short term memory.
 
-Programmers must be too smart, so they are seen as a resource that can be wasted.
-There are only so many thoughts to be had.
+Some 10 years ago we used forums to solve programming problems. [Stack Overflow](https://stackoverflow.com/) has solved it by giving a solution where we don't need to think. Literally, it takes 2 seconds to scan the answer and determine whether it applies to what you are searching for. All the users abide by simple rules, and as a result we have a tool that no programmer can survive without.
 
-Nothing changes depending on the company size. It is exactly the same both in Riga, Latvia and London, UK.
+The expectation isn't that the code would be easily understood by a 5 year old. Neither by any other non programmer. Just the same as the proof of [Fermat's Last Theorem](http://mathworld.wolfram.com/FermatsLastTheorem.html) isn't an afternoon read for a non mathematician. We are the professionals of the field, but with great powers comes great responsibility. We need to be in the driving seat and abide by rules.
 
-Progress can't be made.
-Imagine the potential.
-A wake up call.
+The limitations of our brains should humble us. We are not computers, so we must write code accordingly. Considering that our code will be read over and changed multiple times, perhaps hundreds, the brain cycle waste is too ridiculous. Our goal is *not* to be professionals of bad code.
 
-There are other things to think about.
+They are always complaining that there is more demand than programmers. Ironically, we are a resource that is wasted every day. This, of course, isn't anything new, neither only applicable to the IT industry. What hurts, however, is that enough effort is not made. Which means that there is a lack of **awareness**, and that **can** and **will change**.
+
+There are plenty of other things to think about.
