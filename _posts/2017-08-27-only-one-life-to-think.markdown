@@ -2,7 +2,7 @@
 layout: post
 title: Only One Life to Think
 tags: programming readability quality management
-date: '2017-07-31 21:36:39 +0300'
+date: '2017-08-27 21:23:39 +0300'
 affiliate_url: 'http://amzn.to/2tWHZ9M'
 published: true
 ---
