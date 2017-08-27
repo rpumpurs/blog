@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reducing Function Argument Count"
-date: "2017-08-27 21:16:30 +0300"
+date: "2017-07-01 18:13:30 +0300"
 tags: programming quality oop
 affiliate_url: http://amzn.to/2un9mMD
 ---
