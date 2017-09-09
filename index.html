@@ -13,9 +13,6 @@ title: Blog About Programming
                                 <small>{{ post.date | date: "%B %e, %Y" }}</small>
                             </time>
                         </li>
-                        <li>
-                            <small><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}"></a></small>
-                        </li>
                     </ul>
             </header>
             <div class="short_description">
@@ -24,5 +21,4 @@ title: Blog About Programming
             <a href="{{ post.url }}">read more ...</a>
         </section>
     {% endfor %}
-    <script id="dsq-count-scr" src="https://pumpurs.disqus.com/count.js" async></script>
 </div>
