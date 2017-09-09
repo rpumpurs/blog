@@ -29,7 +29,7 @@ We can improve the function by extracting the `$type` and `$isActive` arguments 
 
 This is a very basic example, and you could argue that having the company identifier there is justifiable. However, for the sake of this discussion, lets say that we want to make the function niladic.
 
-## The Answer
+### The Answer
 
 Constructors.
 

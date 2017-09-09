@@ -9,7 +9,7 @@ published: true
 
 If you look at a piece of code and have to use your brain to understand what is going on, there is something terribly wrong with it.
 
-## It should read like a book.
+### It should read like a book.
 
 A page turner.
 
