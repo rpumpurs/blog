@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tremendous Upside"
-date: "2017-08-28 21:06:36 +0300"
+date: "2017-09-19 22:02:36 +0300"
 ---
 
 There is one big problem with a day job. The potential growth (if any at all) is linear, whereas the risk that comes with it is exponential.
