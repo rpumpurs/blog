@@ -6,7 +6,7 @@ date: "2017-08-28 21:06:36 +0300"
 
 There is one big problem with a day job. The potential growth (if any at all) is linear, whereas the risk that comes with it is exponential.
 
-We live in an ever-changing world where the pace of things keeps increasing. Hundreds of years ago one perhaps felt confident that the trade they picked will be in demand their whole lifetime, even their childrens' lifetime. Today the likelihood of [disruptive innovation](https://en.wikipedia.org/wiki/Disruptive_innovation) is higher than ever.
+We live in an ever-changing world where the pace of things keeps increasing. Hundreds of years ago one perhaps felt confident that the trade they picked will be in demand their whole lifetime, even their children's lifetime. Today the likelihood of [disruptive innovation](https://en.wikipedia.org/wiki/Disruptive_innovation) is higher than ever.
 
 Stories of robots taking away jobs from the middle class keep appearing in the news headlines. Let's say this is true, and soon we will have robots doing everything from stacking shelves at grocery stores to complicated heart surgeries. My theory has always been that programming will be the last profession to disappear (we are a fairly sturdy bunch), because we know the robots have to be told what to do and how to do it, or basically they have to be programmed. It is a wishful theory, but there we go.
 
