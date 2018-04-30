@@ -5,9 +5,13 @@ published: false
 
 For some reason testing is generally seen as a boring, tedious and time consuming task. Well, I couldn't agree more, I would rather just write code and let somebody else do the testing, and actually, it is the solution that I am proposing!
 
-The 'somebody else' could be:
-1.  The cpu - lets make the computer do what they are the best at - computation intensive work over and over again. No precious programmer time is used to run the automated tests.
-2. The authors of the original code - the automated tests are the least expensive when they are written together with the original code because the intent of the code is most fresh when it is first typed up.
+OK, so first I will need to clarify what I mean by it. The story is about automated - unit, integration etc.  - tests. I am trying to find reasons for why there seems to be so much resistance towards them. It [seems](https://stackoverflow.com/questions/67299/is-unit-testing-worth-the-effort) that we all agree that tests are useful, yet nearly every "real life" project that I have worked on hasn't had a proper test framework in place. Also, I have witnessed a lack of motivation from my co-workers to write tests.
+
+I believe that boring work can nearly always be avoided so in every situation I look for shortcuts to do things differently.
+
+The 'somebody else' is:
+1.  The cpu - lets make the computer do what it is the best at - computation intensive work over and over again. No precious programmer time is used to run the automated tests.
+2. The author of the original code - the automated tests are the least expensive when they are written together with the original code because the intent of the code is most fresh when it is first typed up.
 
 
 
