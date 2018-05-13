@@ -1,7 +1,9 @@
 ---
-published: false
+layout: post
+title: "Program, Not Test"
+date: "2017-10-20 19:54:36 +0300"
+tags: testing, maintainability
 ---
-## Program, Not Test
 
 For some reason, testing is generally seen as a boring, tedious and time-consuming task. Well, I couldn't agree more, I would rather just write code and let somebody else do the testing, so actually, that *is* the solution that I am proposing!
 
