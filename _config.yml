@@ -4,7 +4,7 @@ email:
 description: This blog contains ideas about software and the industry. The way code is written these days is painfully sub-optimal. So ideas need to be had.
 keywords: programming, quality, OOP, ideas, management, PHP
 copyright: "(c) Rudolfs Pumpurs 2017"
-baseurl: "/blog/"
+baseurl: "/blog"
 url: "https://rpumpurs.github.io"
 
 # Build settings
