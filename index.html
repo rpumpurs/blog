@@ -6,7 +6,7 @@ title: Blog About Programming
     {% for post in site.posts %}
         <section>
             <header>
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
                     <ul>
                         <li>
                             <time>
@@ -18,7 +18,7 @@ title: Blog About Programming
             <div class="short_description">
                 {{ post.excerpt }}
             </div>
-            <a href="{{ post.url }}">read more ...</a>
+            <a href="{{ site.baseurl }}{{ post.url }}">read more ...</a>
         </section>
     {% endfor %}
 </div>
