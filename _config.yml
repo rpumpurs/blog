@@ -5,7 +5,7 @@ description: This blog contains ideas about software and the industry. The way c
 keywords: programming, quality, OOP, ideas, management, PHP
 copyright: "(c) Rudolfs Pumpurs 2017"
 baseurl: "/"
-url: "http://pumpurs.com"
+#url: "http://pumpurs.com"
 
 # Build settings
 markdown: kramdown
